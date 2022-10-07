@@ -24,7 +24,7 @@ class DrivableTrader extends Trader<Drivable>{
     public int getSellingPrice(Drivable item) {
         if (item instanceof Tradable) {
             return ((Tradable) item).getPrice() + item.getMaxSpeed();
-        } else {return ((Tradable) item).MISSING_PRICE;}
+        } else {return Tradable.MISSING_PRICE;}
     }
 
 
